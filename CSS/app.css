@@ -1,0 +1,56 @@
+/* These styles will be for HTML in the top section of the app (titles, modals), and for the entire page as a whole */
+body {
+    background-color: #3E3C3D;
+    text-align: center;
+}
+h1 {
+    background: -webkit-linear-gradient(#FFC857, #DB3A34);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-align: center;
+}
+h2 {
+    background: -webkit-linear-gradient(#1B909D, #0B6884);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.subtitle {
+    color: #997C44;
+}
+section #title {
+    display: inline;
+    text-align: right;
+}
+.description {
+    color: #FFC857;
+}
+.inline {
+    display: inline;
+}
+
+
+/* These styles will be for the bottom section of the app (the different columns/containers that receive and display numbers
+        for currency conversion */
+.js-box {
+    color: #F0DB4F;
+    border: solid;
+}
+.js-icon {
+    max-width: 8.4%;
+    max-height: 5%;
+}
+.py-box {
+    color: #3776ab;
+    border: solid;
+}
+.py-icon {
+    width: 5%;
+    height: 5%;
+}
+.php-box {
+    color: #8993be;
+    border: solid;
+}
+.php-icon {
+
+}

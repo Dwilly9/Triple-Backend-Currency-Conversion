@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Triple Backend Currency Converter</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="/CSS/app.css">
+</head>
+<body>
+    <!-- Main HTML content (container class used for Bootstrap Grid) -->
+    <main class="container">
+        <!-- Top Portion of the page, containing the title and modals to display more information -->
+        <section id="title">
+            <h1>Dan Williams 2021 Honors Capstone Project</h1>
+            <h2>Triple-Backend Currency Conversion Application</h2>
+        </section>
+
+        <!-- Bottom portion of the page, containing the 3 columns that each converts currency using a different scripting language -->
+        <h2>Currency Converters</h2>
+        <p class="subtitle">These will all function the same, however, the code going into how they work is vastly different.</p>
+
+        <section id="Converters" class="row">
+            <!-- Currency Converter using JavaScript -->
+            <article id="JS-Converter" class="col-sm js-box mx-3">
+                JavaScript <img src="/Assets/javascript.png" class="js-icon"> 
+                <form>
+                    <p class="inline">Convert</p>
+                    <input type="number"> <p class="inline"> in </p><br>
+                    <select id="from-currency" class="mt-4">
+                        <option value="USD">USD</option>
+                        <option value="Euro">Euro</option>
+                        <option value="Yen">Yen</option>
+                        <option value="BRP">British Pound</option>
+                    </select>
+                    <p> to </p>
+                    <select id="to-currency">
+                        <option value="USD">USD</option>
+                        <option value="Euro">Euro</option>
+                        <option value="Yen">Yen</option>
+                        <option value="BRP">British Pound</option>
+                    </select>
+                    <button>Convert</button>
+                </form>
+                <p>Result</p>
+            </article>
+
+            <!-- Currency Converter using Python -->
+            <article id="Py-Converter" class="col-sm py-box mx-3">
+                Python <img src="/Assets/python.png" class="py-icon">
+                <form>
+                    <p>Convert</p>
+                    <input type="number"> <p> in </p>
+                    <select id="from-currency">
+                        <option value="USD">USD</option>
+                        <option value="Euro">Euro</option>
+                        <option value="Yen">Yen</option>
+                        <option value="BRP">British Pound</option>
+                    </select>
+                    <p> to </p>
+                    <select id="to-currency">
+                        <option value="USD">USD</option>
+                        <option value="Euro">Euro</option>
+                        <option value="Yen">Yen</option>
+                        <option value="BRP">British Pound</option>
+                    </select>
+                    <button>Convert</button>
+                </form>
+                <p>Result</p>
+            </article>
+
+            <!-- Currency Converter using PHP -->
+            <article id="PHP-Converter" class="col-sm php-box mx-3">
+                PHP <img src="/Assets/php.svg" class="php-icon">
+                <form>
+                    <p>Convert</p>
+                    <input type="number"> <p> in </p>
+                    <select id="from-currency">
+                        <option value="USD">USD</option>
+                        <option value="Euro">Euro</option>
+                        <option value="Yen">Yen</option>
+                        <option value="BRP">British Pound</option>
+                    </select>
+                    <p> to </p>
+                    <select id="to-currency">
+                        <option value="USD">USD</option>
+                        <option value="Euro">Euro</option>
+                        <option value="Yen">Yen</option>
+                        <option value="BRP">British Pound</option>
+                    </select>
+                    <button>Convert</button>
+                </form>
+                <p>Result</p>
+
+            </article>
+
+        </section>
+    </main>
+
+    <!-- Scripts -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
+</html>
