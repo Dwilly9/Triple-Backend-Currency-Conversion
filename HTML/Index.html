@@ -28,23 +28,24 @@
                 <!-- <img src="/Assets/javascript.png" class="js-icon">  -->
                 <form>
                     <p class="inline">Convert</p>
-                    <input type="number"> <p class="inline"> in </p><br>
+                    <input type="number" id="JSAmount"> <p class="inline"> in </p><br>
                     <select id="from-currency" class="mt-4">
                         <option value="USD">USD</option>
-                        <option value="Euro">Euro</option>
+                        <!-- <option value="Euro">Euro</option>
                         <option value="Yen">Yen</option>
-                        <option value="BRP">British Pound</option>
+                        <option value="BRP">British Pound</option> -->
                     </select>
                     <p> to </p>
                     <select id="to-currency">
-                        <option value="USD">USD</option>
+                        <!-- <option value="USD">USD</option> -->
                         <option value="Euro">Euro</option>
-                        <option value="Yen">Yen</option>
-                        <option value="BRP">British Pound</option>
+                        <!-- <option value="Yen">Yen</option>
+                        <option value="BRP">British Pound</option> -->
                     </select>
-                    <button>Convert</button>
+                    <button type="submit" id="JSConvert">Convert</button>
                 </form>
-                <p>Result</p>
+                <p>Result:</p>
+                <div id="JSResult">Result here</div>
             </article>
 
             <!-- Currency Converter using Python -->
@@ -52,24 +53,27 @@
                 Python 
                 <!-- <img src="/Assets/python.png" class="py-icon"> -->
                 <form>
-                    <p>Convert</p>
-                    <input type="number"> <p class="inline"> in </p>
-                    <select id="from-currency">
+                    <p class="inline">Convert</p>
+                    <input type="number"> <p class="inline"> in </p><br>
+                    <select id="from-currency" class="mt-4">
                         <option value="USD">USD</option>
-                        <option value="Euro">Euro</option>
+                        <!-- <option value="Euro">Euro</option>
                         <option value="Yen">Yen</option>
-                        <option value="BRP">British Pound</option>
+                        <option value="BRP">British Pound</option> -->
                     </select>
                     <p> to </p>
                     <select id="to-currency">
-                        <option value="USD">USD</option>
+                        <!-- <option value="USD">USD</option> -->
                         <option value="Euro">Euro</option>
-                        <option value="Yen">Yen</option>
-                        <option value="BRP">British Pound</option>
+                        <!-- <option value="Yen">Yen</option>
+                        <option value="BRP">British Pound</option> -->
                     </select>
-                    <button>Convert</button>
+                    <button type="submit">Convert</button>
                 </form>
-                <p>Result</p>
+                <p>Result:</p>
+                <div>
+                    <p id="Pyresult"></p>
+                </div>
             </article>
 
             <!-- Currency Converter using PHP -->
@@ -77,33 +81,37 @@
                 PHP 
                 <!-- <img src="/Assets/php.svg" class="php-icon"> -->
                 <form>
-                    <p>Convert</p>
-                    <input type="number"> <p class="inline"> in </p>
-                    <select id="from-currency">
+                    <p class="inline">Convert</p>
+                    <input type="number"> <p class="inline"> in </p><br>
+                    <select id="from-currency" class="mt-4">
                         <option value="USD">USD</option>
-                        <option value="Euro">Euro</option>
+                        <!-- <option value="Euro">Euro</option>
                         <option value="Yen">Yen</option>
-                        <option value="BRP">British Pound</option>
+                        <option value="BRP">British Pound</option> -->
                     </select>
                     <p> to </p>
                     <select id="to-currency">
-                        <option value="USD">USD</option>
+                        <!-- <option value="USD">USD</option> -->
                         <option value="Euro">Euro</option>
-                        <option value="Yen">Yen</option>
-                        <option value="BRP">British Pound</option>
+                        <!-- <option value="Yen">Yen</option>
+                        <option value="BRP">British Pound</option> -->
                     </select>
                     <button>Convert</button>
                 </form>
-                <p>Result</p>
-
+                <p>Result:</p>
+                <div>
+                    <p id="PHPresult"></p>
+                </div>
             </article>
 
         </section>
     </main>
 
-    <!-- Scripts -->
+    <!-- Bootstrap Scripts -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <!-- Currency Conversion Scripts -->
+    <script src="/Backend/JS/currencyAPI.js"></script>
 </body>
 </html>
