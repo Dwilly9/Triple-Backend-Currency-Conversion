@@ -2,7 +2,7 @@ var https = require('https');
 var output = document.getElementById('JSresult')
 
 function convertCurrency(amount, fromCurrency, toCurrency, cb) {
-  var apiKey = 'b55178b553967e0f972d';
+  var apiKey = '<API key>';
 
   fromCurrency = encodeURIComponent('USD');
   toCurrency = encodeURIComponent('EUR');
